@@ -78,17 +78,19 @@ function writeToFile(answers) {
     };
 
     fs.writeFile('README.md',
-    `#${title}
+    `# ${title}
     
-    ##${descrip}
+    ## Description of Project
+    ${descrip}
 
-    ##${langs}
+    ## Languages used
+    ${langs}
 
-    ##${team}
-
-    ##${links}
-
-    ##${deploy}
+    ## Meet the developers
+    * ${team} - ${links}
+  
+    ## Deployed link to project
+    Click [HERE](${deploy}) to write your own README file!
     `, (err) => {
         if(err) console.log(err);
         else {
