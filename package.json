@@ -8,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs": "^0.0.1-security",
     "inquirer": "8.2.4"
   },
   "repository": {
@@ -19,6 +20,5 @@
     "url": "https://github.com/Minotaurius/Readme_Generator/issues"
   },
   "homepage": "https://github.com/Minotaurius/Readme_Generator#readme",
-  "devDependencies": {},
   "description": ""
 }
