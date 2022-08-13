@@ -23,16 +23,15 @@ const questions = [
 },
 
 {
-    type: 'list',
+    type: 'type',
     name: 'team',
-    message: 'Did you work with anyone on this project?',
-    choices: ['No', 'Yes']
+    message: 'Please enter your name',
 },
 
 {
     type: 'input',
     name: 'links',
-    message: 'Please enter their GitHub links separated by commas so we can include them'
+    message: 'Please enter your GitHub link so we can include that in the README'
 },
 
 {
@@ -88,6 +87,9 @@ function writeToFile(answers) {
 
     ## Meet the developers
     * ${team} - ${links}
+
+    ## License
+    ${newLicense}
   
     ## Deployed link to project
     Click [HERE](${deploy}) to write your own README file!
