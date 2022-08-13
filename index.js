@@ -43,13 +43,13 @@ const questions = [
 
 {
     type: 'input',
-    name: 'deploy',
+    name: 'demo',
     message: 'Please include a link to your deployed project'
 }];
 
 // TODO: Create a function to write README file
 function writeToFile(answers) {
-    const { title, descrip, langs, team, links, license, deploy} = answers;
+    const { title, descrip, langs, team, links, license, demo} = answers;
     if(license === 'Yes') {
         var newLicense = `MIT License
 
@@ -92,7 +92,7 @@ function writeToFile(answers) {
     ${newLicense}
   
     ## Deployed link to project
-    Click [HERE](${deploy}) to write your own README file!
+    Click [HERE](${demo}) to watch the demo showcasing this application!
     `, (err) => {
         if(err) console.log(err);
         else {
